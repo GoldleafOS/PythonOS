@@ -1,1 +1,1 @@
-python3 k.py #运行内核
+python3 kernel.py #运行内核

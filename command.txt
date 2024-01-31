@@ -1,5 +1,10 @@
 目前可用的命令是
 
-ver 这些命令是用来查看系统版本的
-dir 可用于查看文件系统
-time 查看时间
+ver 查看系统版本
+dir 查看文件系统
+time 设定时间
+repasswd 重新设置密码
+calendar 日历功能
+calc 计算器
+coverter 着原本系内核里面有的,我也不知道干嘛的
+exit 退出
