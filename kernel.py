@@ -55,7 +55,7 @@ print("[OKAY]boot OKAY")
 #turtle.done()
 #本来想做一个文件系统的#Sdi = home 
 print('############################')
-print('#        MOLINUX V1.1      #')
+print('#       MOpythonOS V1.1    #')
 print('#     GNU Open Project     #')
 print('# you can inputto system   #')
 print('#xingzhuolii528@outlook.com#')
