@@ -1,5 +1,5 @@
 print("boot vim")
-#input subprocess
+import subprocess
 print("""
 ppppp   rrrrr   iiii  v   v  iiii
 p   p   r   r    ii   v   v   ii
@@ -30,4 +30,4 @@ __________________________________________________________
 
 #else:
     # 使用subprocess调用kernel.py
-    #subprocess.call(["python", "kernel.py"])
+    subprocess.call(["python", "kernel.py"])

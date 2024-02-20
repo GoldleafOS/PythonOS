@@ -88,6 +88,7 @@ while count < 3:
         while count < 3:
             passwd = getpass.getpass("Password: ")
             if passwd == stpasswd:
+            
 #进度条部分,在bbcos的开源上https://blog.csdn.net/qq_62293794/article/details/128476017
 
                 tm.sleep(1.5)
@@ -95,9 +96,9 @@ while count < 3:
                     bash = input("MOLinux-root@mx ~ # ")
                     if bash == "ls" or bash == "dir":
                         print("Downloads  Documents  Music  Pictures")
-                    elif bash == "ver" or bash == "version" or bash == "-v" or bash == "-ver" or bash == "-version":
+                    if bash == "ver" or bash == "version" or bash == "-v" or bash == "-ver" or bash == "-version":
                         print("MOLinux is v:1.0.23.12.10.Dev on OpenBBC OS (R) Core Open Source System 1.2 ")
-                    elif bash == "coverter":
+                    if bash == "coverter":
                         print("File Covert\nCovert .lpap/.lpcu/.bbc to .umm")
                         input("Input file's path:\n")
                         print("Coverting [____________________] 0%")
@@ -111,29 +112,32 @@ while count < 3:
                         print("Coverting [####################] 100%")
                         tm.sleep(0.09)
                         print("Covert Complete.")
-                    elif bash == "time" or bash:
+                    if bash == "time" or bash:
                         now = datetime.datetime.now()
                         other_StyleTime = now.strftime("%Y-%m-%d %H:%M:%S")
-                    elif bash == "repasswd":
+                    if bash == "repasswd":
                         stpasswd = input("Input new password: ")
-                    elif bash == "calendar" or bash == "日历" :
+                    if bash == "calendar" or bash == "日历" :
                         yy = int(input("Year: "))
                         mm = int(input("Month: "))
                         print(calendar.month(yy, mm))
-                    elif bash == "calc" or bash == "计算器":
+                    if bash == "calc" or bash == "计算器":
                         try:
                             formula = input("Enter the formula to be calculated:\n")
                             print(formula + "=", eval(formula))
                         except Exception as e:
                             print("Input error.")
-                    elif bash == "clear":
+                    if bash == "clear":
                         i = os.system("cls")
+                    if bash == "www" :
+                        subprocess.run(["python", "www.py"])
 
-                    elif bash == "vim":
+                    if bash == "vim":
                         # 使用subprocess模块执行Python脚本
-                        subprocess.run(["python", privi])
+                        subprocess.run(["python", "privi.py"])
 
-                    elif bash == 'help':
+
+                    if bash == 'help':
                         print('ver 查看系统版本')
                         print('time 设定时间')
                         print('repasswd 重新设置密码')
@@ -142,9 +146,9 @@ while count < 3:
                         print('calc 计算器')
                         print('exit 退出')
                         print('coverter ???')
-                    elif bash == 'exit':
+                    if bash == 'exit':
                         break
-                    else:
+                    
                         print("Error password! Please retry") 
  
 
