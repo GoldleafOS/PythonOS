@@ -15,6 +15,8 @@ import getpass
 import datetime
 import calendar
 print("[OKAY]Plugin_OK")
+import subprocess
+print("[OKAY]app")
 
 print("##---------------- 12%")
 import openai
@@ -54,13 +56,27 @@ print("[OKAY]boot OKAY")
 # 保持窗口打开
 #turtle.done()
 #本来想做一个文件系统的#Sdi = home 
+print("""
+              #########
+            ##         ##
+           #             #
+          #      ###      #
+          #      #  #     #
+          #      ###      #
+           #     #       #
+            ##         ##
+              #########
+""")
 print('############################')
-print('#       MOpythonOS V1.1    #')
+print('#        PythonOS V1.2     #')
 print('#     GNU Open Project     #')
 print('# you can inputto system   #')
 print('#xingzhuolii528@outlook.com#')
 print("#      GITHUBVersion       #")
 print('############################')
+
+
+
 #passwd mode
 count = 0
 stpasswd = "adminpasswd"
@@ -112,6 +128,11 @@ while count < 3:
                             print("Input error.")
                     elif bash == "clear":
                         i = os.system("cls")
+
+                    elif bash == "vim":
+                        # 使用subprocess模块执行Python脚本
+                        subprocess.run(["python", privi])
+
                     elif bash == 'help':
                         print('ver 查看系统版本')
                         print('time 设定时间')

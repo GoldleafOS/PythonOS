@@ -1,4 +1,4 @@
-# MOPythonOS
+# MOLinux
 基于BBCOS的系统,未来希望可以变成主流系统
 
 # 启动条件
@@ -16,4 +16,6 @@ https://blog.csdn.net/qq_62293794/article/details/128476017
 app.py是以后我准备开发app在那里,现在是空的
 对了,kernel.py有问题,不知道怎么回事,除了ls和dir以外,别的命令都无法使用,如果在您的设备上仍然无法运行,请报告在github.com
 # 特别告示栏
-暂无:)
+请先安装pip.txt里面的东西再运行,新增app(输入vim开启)
+账号:root
+密码:adminpasswd
