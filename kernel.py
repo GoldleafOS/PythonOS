@@ -24,6 +24,9 @@ print("########-----------48%")
 import mlx
 print("################---96%")
 print("##################100%")
+Dev = "yes"
+yes = "ok"
+int_ = "boot"
 print("[OKAY]boot OKAY")
 
 # 创建一个新窗口
@@ -68,23 +71,24 @@ print("""
               #########
 """)
 print('############################')
-print('#        PythonOS V1.2     #')
+print('#        PythonOS V1.3     #')
 print('#     GNU Open Project     #')
 print('# you can inputto system   #')
 print('#xingzhuolii528@outlook.com#')
 print("#      GITHUBVersion       #")
+print("#        Dev   开发版       #")
 print('############################')
 
 
 
 #passwd mode
 count = 0
-stpasswd = "adminpasswd"
+stpasswd = "passwd"
 #log in
 
 while count < 3:
     user = input("Login: ")
-    if user == "root":
+    if user == "admin":
         while count < 3:
             passwd = getpass.getpass("Password: ")
             if passwd == stpasswd:
@@ -93,7 +97,7 @@ while count < 3:
 
                 tm.sleep(1.5)
                 while count < 3:
-                    bash = input("MOLinux-root@mx ~ # ")
+                    bash = input("MOLinux-sudo@mx ~ $ ")
                     if bash == "ls" or bash == "dir":
                         print("Downloads  Documents  Music  Pictures")
                     if bash == "ver" or bash == "version" or bash == "-v" or bash == "-ver" or bash == "-version":
@@ -129,12 +133,12 @@ while count < 3:
                             print("Input error.")
                     if bash == "clear":
                         i = os.system("cls")
-                    if bash == "www" :
-                        subprocess.run(["python", "www.py"])
 
                     if bash == "vim":
                         # 使用subprocess模块执行Python脚本
-                        subprocess.run(["python", "privi.py"])
+                        subprocess.run(["python3", "privi.py"])
+                    if bash == "app":
+                        subprocess.run(["python", "app.py"])
 
 
                     if bash == 'help':
@@ -146,6 +150,9 @@ while count < 3:
                         print('calc 计算器')
                         print('exit 退出')
                         print('coverter ???')
+                        print('app 启动应用程序')
+                        print('vim 启动vim')
+                        
                     if bash == 'exit':
                         break
                     

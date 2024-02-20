@@ -16,8 +16,8 @@ comand = input("i是写 e是exit 暂时只支持这两个")
 if comand == "i"  :
     dazi = input("在冒号上写字(可以说是打字吧...)回车查看:")
     
-    print(dazi)
-    print("""
+    
+    print(dazi + """
       
 
 __________________________________________________________
@@ -30,4 +30,4 @@ __________________________________________________________
 
 #else:
     # 使用subprocess调用kernel.py
-    subprocess.call(["python", "kernel.py"])
+    subprocess.call(["python3", "kernel.py"])

@@ -22,4 +22,4 @@ if "www" or ".com" in www :
     webbrowser.open(www)
 else:
     print("error")
-    subprocess.run(["python", "kernel.py"])
+    subprocess.run(["python3", "kernel.py"])

@@ -17,5 +17,6 @@ app.py是以后我准备开发app在那里,现在是空的
 对了,kernel.py有问题,不知道怎么回事,除了ls和dir以外,别的命令都无法使用,如果在您的设备上仍然无法运行,请报告在github.com
 # 特别告示栏
 请先安装pip.txt里面的东西再运行,新增app(输入vim开启)
-账号:root
-密码:adminpasswd
+为了限制root的系统级别权限,我们取消了root权限
+账号:admin
+密码:passwd
