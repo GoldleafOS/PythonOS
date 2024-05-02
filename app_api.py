@@ -1,5 +1,6 @@
-print("[OKAY]开启应用转接模块")
+print("[BOOT]开启应用转接模块")
 import subprocess
+print("[OKAY]开启应用转接模块")
 print("为了安全,所以以后的应用,都会在这里打开")
 print("PyApps适配内核3.xx(python3)")
 print("""现在可使用:
@@ -25,3 +26,7 @@ else:
     print("回到系统")
     subprocess.run(["python3", "kernel.py"])
 
+
+#App_api开发者示例
+#if api == "x(数字)":
+    #subprocess.run(["python3", "yourapps.py"])

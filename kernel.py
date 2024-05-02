@@ -21,12 +21,13 @@ print("[OKAY]app")
 print("##---------------- 12%")
 import openai
 print("########-----------48%")
-import mlx
 print("################---96%")
 print("##################100%")
-Dev = "yes"
-yes = "ok"
+Dev = "Yes"
+yes = "Ok"
 int_ = "boot"
+
+print("[OKAY]PyQt5 import")
 print("[OKAY]boot OKAY")
 
 # 创建一个新窗口
@@ -76,19 +77,21 @@ print('#     GNU Open Project     #')
 print('# you can inputto system   #')
 print('#xingzhuolii528@outlook.com#')
 print("#      GITHUBVersion       #")
-print("#        Dev   开发版       #")
+print("#      Dev     开发版       #")
 print('############################')
 
 
 
 #passwd mode
 count = 0
-stpasswd = "passwd"
+admin = "MOLinux-sudo@mx ~ # "
+stpasswd_su = "adminpasswd"
+stpasswd = "adminpasswd"
 #log in
 
 while count < 3:
     user = input("Login: ")
-    if user == "admin":
+    if user == "sysroot":
         while count < 3:
             passwd = getpass.getpass("Password: ")
             if passwd == stpasswd:
@@ -97,11 +100,11 @@ while count < 3:
 
                 tm.sleep(1.5)
                 while count < 3:
-                    bash = input("MOLinux-sudo@mx ~ $ ")
+                    bash = input(admin)
                     if bash == "ls" or bash == "dir":
                         print("Downloads  Documents  Music  Pictures")
                     if bash == "ver" or bash == "version" or bash == "-v" or bash == "-ver" or bash == "-version":
-                        print("MOLinux is v:1.0.23.12.10.Dev on OpenBBC OS (R) Core Open Source System 1.2 ")
+                        print("MOLinux is v:1.0.24.05.01.Dev kernel by LinuxPython3 system by OpenBBCProject (R)core Source System 1.2 ")
                     if bash == "coverter":
                         print("File Covert\nCovert .lpap/.lpcu/.bbc to .umm")
                         input("Input file's path:\n")
@@ -133,14 +136,11 @@ while count < 3:
                             print("Input error.")
                     if bash == "clear":
                         i = os.system("cls")
-
                     if bash == "vim":
                         # 使用subprocess模块执行Python脚本
                         subprocess.run(["python3", "privi.py"])
                     if bash == "app":
-                        subprocess.run(["python", "app.py"])
-
-
+                        subprocess.run(["python3", "app_api.py"])
                     if bash == 'help':
                         print('ver 查看系统版本')
                         print('time 设定时间')
@@ -152,11 +152,6 @@ while count < 3:
                         print('coverter ???')
                         print('app 启动应用程序')
                         print('vim 启动vim')
-                        
                     if bash == 'exit':
                         break
-                    
-                        print("Error password! Please retry") 
- 
-
-
+                        #print("Error password! Please retry") 
