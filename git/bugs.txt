@@ -1,0 +1,12 @@
+漏洞格式
+ 漏洞危险等级:ZAYIN(安全),TETH(普通危险),HE(严重危险),WAW(及其危险!),ALEPH(毁灭性的,非常规的严重,最危险!)
+ 漏洞格式: PYS-年月日-字第几行或出处-关系到的东西
+ 字:R:readme.md的#K:kernel的很少见,很严重#N:别的啥玩意吧  
+ 关系到的东西:SYSCORE,kernel.py的或是可以直接获取到Linux运行kernel.py的内核系统的严重危害漏洞,全是ALEPH级别的
+漏洞:
+ PYS-240502-R32-SYSCORE:出处:readme第32行,严重等级:ALEPH-非常严重-未证实-容易接触到系统底层,很危险
+ 该漏洞原理为:APP_API.py直接运行未经优化的py文件,在最后可能会:无法退出或是因为break导致直接退出python环境,导致进
+ 入系统命令行,直接接触root用户,很危险
+ PYS-240505-APP_APIall-app:出处:APP_API.py所有(运行机制)和kernel.py的非系统程序(.py程序而不是自带的计算器等)
+ ,严重等级:ZAYIN-安全危险-正在修复-影响体验,该漏洞原理为:在运行完成.py程序后返回kernel.py导致需要重新登录kernel.py
+ 影响用户体验,正在修复
