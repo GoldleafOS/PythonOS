@@ -7,5 +7,6 @@ time 设定时间
 repasswd 重新设置密码
 calendar 日历功能
 calc 计算器
-coverter 着原本系内核里面有的,我也不知道干嘛的
+coverter 着原本内核里面有的,我也不知道干嘛的
+app app选择
 exit 退出

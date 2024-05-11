@@ -21,7 +21,16 @@ print("[OKAY]app")
 print("##---------------- 12%")
 import openai
 print("########-----------48%")
+all_files_dirs = os.listdir()
+
+#文件系统
+apps = "lisisql AI_project.py bombom.py game.py privi.py www.py"
+devfile = "bt.py bt(ofpyos).py GUI.ui newui.ui"
+git = "bugs.txt pip.txt README.MD.bak"
+pyos = "debugOS.py GUI.py kernel.py"
 print("################---96%")
+gen = " ".join(all_files_dirs)
+#gen = "apps devfile git PythonOSsys bootloader.py command.txt Oos.ico Readme.txt start.sh"
 print("##################100%")
 Dev = "Yes"
 yes = "Ok"
@@ -102,7 +111,7 @@ while count < 3:
                 while count < 3:
                     bash = input(admin)
                     if bash == "ls" or bash == "dir":
-                        print("Downloads  Documents  Music  Pictures")
+                        print(gen)
                     if bash == "ver" or bash == "version" or bash == "-v" or bash == "-ver" or bash == "-version":
                         print("MOLinux is v:1.0.24.05.01.Dev kernel by LinuxPython3 system by OpenBBCProject (R)core Source System 1.2 ")
                     if bash == "coverter":
@@ -138,10 +147,11 @@ while count < 3:
                         i = os.system("cls")
                     if bash == "vim":
                         # 使用subprocess模块执行Python脚本
-                        vim_path = os.path.join(os.path.dirname(__file__), 'apps', 'privi.py')
+                        vim_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'apps', 'privi.py')
                         subprocess.run(["python3", vim_path])
                     if bash == "app":
-                        api_path = os.path.join(os.path.dirname(__file__), 'apps', 'app_api.py')
+                        api_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'apps', 'app_api.py')
+                        #api_path = os.path.join(os.path.dirname(__file__), 'apps', 'app_api.py')
                         subprocess.run(["python3", api_path])
                     if bash == 'help':
                         print('ver 查看系统版本')
