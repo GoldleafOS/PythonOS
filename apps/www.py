@@ -1,5 +1,6 @@
 import webbrowser
 import subprocess
+import os
 print("""
        _____
    ,-:` \;',`'-, 
@@ -22,4 +23,5 @@ if "www" or ".com" in www :
     webbrowser.open(www)
 else:
     print("error")
-    subprocess.run(["python3", "kernel.py"])
+    pyos_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'apps', 'app_api.py')
+    subprocess.run(["python3", "app_api.py"])

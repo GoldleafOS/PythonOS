@@ -1,6 +1,8 @@
 
 import turtle
 import time
+import os
+import subprocess
 import random
 
 delay = 0.1
@@ -9,7 +11,7 @@ high_score = 0
 
 # 设置屏幕
 wn = turtle.Screen()
-wn.title("太空与球")
+wn.title("torchsnaxsi")
 wn.bgcolor("blue")
 wn.setup(width=600, height=600)
 wn.tracer(0) # 关闭屏幕更新
@@ -158,4 +160,9 @@ while True:
 
     time.sleep(delay)
 
-wn.mainloop()
+one = input("ok:")
+if one == "ok":
+    pyos_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'apps', 'app_api.py')
+    subprocess.run(["python3", pyos_path])
+
+

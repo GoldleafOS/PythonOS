@@ -81,7 +81,7 @@ print("""
               #########
 """)
 print('############################')
-print('#        PythonOS V1.3     #')
+print('#        PythonOS V1.4     #')
 print('#     GNU Open Project     #')
 print('# you can inputto system   #')
 print('#xingzhuolii528@outlook.com#')
@@ -113,7 +113,7 @@ while count < 3:
                     if bash == "ls" or bash == "dir":
                         print(gen)
                     if bash == "ver" or bash == "version" or bash == "-v" or bash == "-ver" or bash == "-version":
-                        print("MOLinux is v:1.0.24.05.01.Dev kernel by LinuxPython3 system by OpenBBCProject (R)core Source System 1.2 ")
+                        print("MOLinux is v:1.0.24.05.18.Dev kernel by Python3 system by OpenBBCProject (R)core Source System 1.4 ")
                     if bash == "coverter":
                         print("File Covert\nCovert .lpap/.lpcu/.bbc to .umm")
                         input("Input file's path:\n")
@@ -145,6 +145,10 @@ while count < 3:
                             print("Input error.")
                     if bash == "clear":
                         i = os.system("cls")
+                    elif bash == 'exit':
+                        break
+                    else:
+                        print("未知命令!")
                     if bash == "vim":
                         # 使用subprocess模块执行Python脚本
                         vim_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'apps', 'privi.py')
@@ -153,6 +157,7 @@ while count < 3:
                         api_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'apps', 'app_api.py')
                         #api_path = os.path.join(os.path.dirname(__file__), 'apps', 'app_api.py')
                         subprocess.run(["python3", api_path])
+                    
                     if bash == 'help':
                         print('ver 查看系统版本')
                         print('time 设定时间')
@@ -164,6 +169,7 @@ while count < 3:
                         print('coverter ???')
                         print('app 启动应用程序')
                         print('vim 启动vim')
-                    if bash == 'exit':
+                    
+                    elif bash == 'exit':
                         break
                         #print("Error password! Please retry") 
